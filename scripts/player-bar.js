@@ -15,8 +15,6 @@
      player.playPause(nextSong);
    });
 
-<<<<<<< HEAD
-=======
    $('#time-control input').on('input', function (event) {
      player.skipTo(event.target.value);
   });
@@ -32,7 +30,6 @@
    }, 1000);
 }
 
->>>>>>> checkpoint-sliders
 //Previous button function
 
 $('button#previous').on('click', function() {
