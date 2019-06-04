@@ -15,11 +15,6 @@
      player.playPause(nextSong);
    });
 
-   $('#time-control input').on('input', function (event) {
-   player.skipTo(event.target.value);
- });
-}
-
 //Previous button function
 
 $('button#previous').on('click', function() {
@@ -28,7 +23,8 @@ $('button#previous').on('click', function() {
     const currentSongIndex = album.songs.indexOf(player.currentlyPlaying);
     const previousSongIndex = currentSongIndex - 1;
     if (previousSongIndex < 0 ) { return; }
-    
+
     const previousSong = album.songs[previousSongIndex];
     player.playPause(previousSong);
 })
+}
