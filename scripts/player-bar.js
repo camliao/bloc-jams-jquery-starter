@@ -19,7 +19,6 @@
      player.skipTo(event.target.value);
   });
 
-
    setInterval( () => {
      if (player.playState !== 'playing') { return; }
      const currentTime = player.getTime();
@@ -42,4 +41,3 @@ $('button#previous').on('click', function() {
     const previousSong = album.songs[previousSongIndex];
     player.playPause(previousSong);
 })
-}
